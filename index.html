@@ -3,21 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch</title>
+    <title>Recipe Finder</title>
   </head>
+
   <body>
-    <section id="recipe-section">
+    <header>
       <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
       <input
         aria-label="food-input"
         id="food-input"
         onchange="handleFoodChange()"
+        placeholder="Enter ingredient here..."
       />
       <button id="recipe-button" onclick="handleRecipeClick()">
         Give me a recipe!
       </button>
-      <a id="recipe-label"></a>
-    </section>
+    </header>
+
+    <div id="search-results">
+      <h4 id="results">Showing Results for:</h4>
+    </div>
+
+    <!--Where the recipes are stored-->
+    <section id="recipe-section"
+
     <script src="./main.js"></script>
   </body>
 </html>
