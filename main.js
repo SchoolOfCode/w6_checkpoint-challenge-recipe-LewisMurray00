@@ -55,8 +55,25 @@ function handleFoodChange(){
   foodToSearch = document.querySelector("#food-input").value;
 }
 
+//Added a function that hides and shows the searches
+function showItems(){
+  recipeSection.style.display = "flex";
+  results.style.display = "block";
+  images.forEach((section) => (section.style.display = "block"));
+  articles.forEach((section) => (section.style.display = "block"));
+}
+
+function hideItems() {
+  results.style.display = "none";
+  recipeSection.style.display = "none";
+  images.forEach((section) => (section.style.display = "none"));
+  articles.forEach((section) => (section.style.display = "none"));
+}
+
+
 async function fetchRecipe(food) {
   //--- write your code below ---
+  showItems();
   let requestUrl = `https://api.edamam.com/search?q=${food}&app_id=${appId}&app_key=${appKey}`;
   const response = await fetch(requestUrl);
   const data = await response.json();
@@ -69,3 +86,5 @@ async function fetchRecipe(food) {
   results.innerHTML = `Showing results for: ${food}`;
   //--- write your code above ---
 };
+
+window.onload = hideItems;
