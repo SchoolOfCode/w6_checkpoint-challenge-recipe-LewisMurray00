@@ -24,6 +24,13 @@ const recipeHeader3 = document.querySelector("recipe3");
 const recipeHeader4 = document.querySelector("recipe4");
 const recipeHeader5 = document.querySelector("recipe5");
 
+//Query selecting all the images and assigning them to the DOM
+const img1 = document.querySelector("img1");
+const img2 = document.querySelector("img2");
+const img3 = document.querySelector("img3");
+const img4 = document.querySelector("img4");
+const img5 = document.querySelector("img5");
+
 let foodToSearch = null;
 
 function handleRecipeClick() {
