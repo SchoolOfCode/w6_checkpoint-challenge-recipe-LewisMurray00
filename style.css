@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(29, 29, 29);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+header h2 {
+    padding-right: 10px;
+    align-self: flex;
+}
+
+header input{
+    flex-basis: 500px;
+    height: 40px;
+}
+
+header button{
+    height: 50px;
+}
