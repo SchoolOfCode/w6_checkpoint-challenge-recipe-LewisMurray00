@@ -29,7 +29,7 @@ header button{
 }
 
 h4{
-    color: rgb(155, 155,155);
+    color: white;
     text-align: right;
 }
 
@@ -90,4 +90,17 @@ a {
       margin-top: 8px;
       margin-right: 16px;
       font-size: 17px;
+  }
+
+  button{
+      background-color: black;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 3px 3px;
+      cursor: pointer;
+      margin-top: 8px;
   }
