@@ -10,6 +10,12 @@ const recipeLink3 = document.querySelector("recipeLink3");
 const recipeLink4 = document.querySelector("recipeLink4");
 const recipeLink5 = document.querySelector("recipeLink5");
 
+//Query selecting all the recipe <h4> and assigning them to the DOM
+const recipeHeader1 = document.querySelector("recipe1");
+const recipeHeader2 = document.querySelector("recipe2");
+const recipeHeader3 = document.querySelector("recipe3");
+const recipeHeader4 = document.querySelector("recipe4");
+const recipeHeader5 = document.querySelector("recipe5");
 
 let foodToSearch = null;
 
