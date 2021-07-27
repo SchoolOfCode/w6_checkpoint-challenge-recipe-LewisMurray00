@@ -1,7 +1,15 @@
 const appId = "cc3547a6";
 const appKey = "5f291e4e74b80618f864b4ca0c647341";
-const requestURL = `https://api.edamam.com/search?q=kale&app_id=${appId}&app_key=${appKey}`;
-const recipeLink = document.querySelector("#recipe-label");
+//const requestURL = `https://api.edamam.com/search?q=kale&app_id=${appId}&app_key=${appKey}`;
+//const recipeLink = document.querySelector("#recipe-label");
+
+//Query selcting all the links and assigning them to the DOM
+const recipeLink1 = document.querySelector("recipeLink1");
+const recipeLink2 = document.querySelector("recipeLink2");
+const recipeLink3 = document.querySelector("recipeLink3");
+const recipeLink4 = document.querySelector("recipeLink4");
+const recipeLink5 = document.querySelector("recipeLink5");
+
 
 let foodToSearch = null;
 
