@@ -34,7 +34,7 @@ const img3 = document.querySelector("#img3");
 const img4 = document.querySelector("#img4");
 const img5 = document.querySelector("#img5");
 
-//Adding the images into an array to be called upon
+//Adding the DOM elements into an array to be called upon
 let recipes = [recipeLink1, recipeLink2, recipeLink3, recipeLink4, recipeLink5];
 let articles = [article1, article2, article3, article4, article5];
 let foodToSearch = null;
@@ -47,14 +47,25 @@ let articleTitles = [
   recipeHeader5
 ];
 
+function handleRecipeClick(){
+  fetchRecipe(foodToSearch);
+}
 
+function handleFoodChange(){
+  foodToSearch = document.querySelector("#food-input").value;
+}
 
 async function fetchRecipe(food) {
   //--- write your code below ---
-  //--- write your code above ---
-  const response = await fetch(`https://api.edamam.com/search?q=${food}&app_id=cc3547a6&app_key=5f291e4e74b80618f864b4ca0c647341`);
-  const recipe = await response.json();
-  console.log(recipe);
-  recipeLink.innerHTML = recipe.hits;
+  let requestUrl = `https://api.edamam.com/search?q=${food}&app_id=${appId}&app_key=${appKey}`;
+  const response = await fetch(requestUrl);
+  const data = await response.json();
 
+  for (i=0; i < recipes.length; i++){
+    recipes[i].innerHTML = data.hits[i].recipe.label;
+    recipes[i].href = data.hits[i].recipe.url;
+    images[i].src = data.hits[i].recipe.image;
+  }
+  results.innerHTML = `Showing results for: ${food}`;
+  //--- write your code above ---
 };
