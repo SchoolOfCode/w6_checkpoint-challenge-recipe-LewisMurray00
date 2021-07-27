@@ -3,20 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch</title>
+    <title>Recipe Finder</title>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
   </head>
+
   <body>
-    <section id="recipe-section">
+    <header>
       <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
       <input
         aria-label="food-input"
         id="food-input"
         onchange="handleFoodChange()"
+        placeholder="Enter ingredient here..."
       />
       <button id="recipe-button" onclick="handleRecipeClick()">
         Give me a recipe!
       </button>
-      <a id="recipe-label"></a>
+    </header>
+
+    <div id="search-results">
+      <h4 id="results">Showing Results for:</h4>
+    </div>
+
+    <!--Where the recipes are stored-->
+    <section id="recipe-section">
+      <!--Recipe 1-->
+      <article class="card" id="card1">
+        <img id="img1" alt="Image of Recipe" />
+        <div class="container">
+          <h4 id="recipe1"></h4>
+          <a id="recipeLink1"></a>
+        </div>
+      </article>
+      <!--Recipe 2-->
+      <article class="card" id="card2">
+        <img id="img2" alt="Image of Recipe" />
+        <div class="container">
+          <h4 id="recipe2"></h4>
+          <a id="recipeLink2"></a>
+        </div>
+      </article>
+      <!--Recipe 3-->
+      <article class="card" id="card3">
+        <img id="img3" alt="Image of Recipe" />
+        <div class="container">
+          <h4 id="recipe3"></h4>
+          <a id="recipeLink3"></a>
+        </div>
+      </article>
+      <!--Recipe 4-->
+      <article class="card" id="card4">
+        <img id="img4" alt="Image of Recipe" />
+        <div class="container">
+          <h4 id="recipe4"></h4>
+          <a id="recipeLink4"></a>
+        </div>
+      </article>
+      <!--Recipe 5-->
+      <article class="card" id="card5">
+        <img id="img5" alt="Image of Recipe" />
+        <div class="container">
+          <h4 id="recipe5"></h4>
+          <a id="recipeLink5"></a>
+        </div>
+      </article>
     </section>
     <script src="./main.js"></script>
   </body>

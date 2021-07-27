@@ -1,0 +1,106 @@
+body {
+    background: #007991;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+header h2 {
+    padding-right: 10px;
+    align-self: flex;
+}
+
+header input{
+    flex-basis: 500px;
+    height: 40px;
+}
+
+header button{
+    height: 50px;
+}
+
+h4{
+    color: white;
+    text-align: right;
+}
+
+.card{
+    box-shadow: 0 4px 8px rgba(123,180,131,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 white;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#recipe-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+article{
+    padding: 10px;
+    background-color: moccasin;
+    text-align: center;
+    width: 33%;
+    height: auto;
+    font-size: medium;
+    position: relative;
+}
+
+img{
+    width: 95%;
+    height: auto;
+}
+
+a {
+    color: rgb(29, 29, 29);
+    padding: 0.3em 0.3em;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(192, 46, 46, 0.568);
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    background-color: crimson;
+  }
+
+  input{
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+  }
+
+  button{
+      background-color: black;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 3px 3px;
+      cursor: pointer;
+      margin-top: 8px;
+  }
